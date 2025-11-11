@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(40%);
+}
+
+/* Netflix title at top-left */
+.logo {
+  position: absolute;   /* this makes top/left work */
+  top: 30px;
+  left: 50px;
+  color: #e50914;
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* Centered text content */
+.text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  
+}
+
+.text-box h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.text-box h5, .text-box h6 {
+  font-weight: normal;
+}
+
+.text-box input {
+  padding: 10px;
+  margin-top: 15px;
+  width: 250px;
+  border: none;
+  border-radius: 3px;
+background: transparent;
+border: white 2px solid;
+border-radius: 10px;
+}
+
+.text-box button {
+  padding: 10px 20px;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.text-box button:hover {
+  background-color: #f40612;
+}
+.main2{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+}
+.main21{
+    position: absolute;
+    background-color: rgba(137, 43, 226, 0.5);
+    color: white;
+    text-align: center;
+    width: 70vw;
+    left: 190px;
+    top: 100px;
+    border: white 2px solid;
+    border-radius: 10px;
+    transition: tranform 0.3s ease, backgroundColor 0.3s ease;
+
+}
+.main21:hover{
+    background-color: blue;
+    transform:  scale(1.1);
+}
